@@ -88,8 +88,8 @@
   <header>
     <div id="logo"> <img src="{% static 'metro logo.png' %}" alt=""> KOCHI METRO</div>
     <nav id="nav">
-      <a href="contact.html">Contact Us</a>
-      <a href="metrosignup.html"><button>Login / Sign Up</button></a>
+      <a href="{% url 'contact' %}">Contact Us</a>
+      <a href="{% url 'metrologin' %}"><button>Login</button></a>
     </nav>
   </header>
   <div class="intro-container">

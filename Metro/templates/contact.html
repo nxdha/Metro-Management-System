@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Your Webpage Title</title>
+
+    {% load static %}
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-image: url('./bg.png'); /* Replace 'background.jpg' with the path to your background image */
+            background-image: url("{% static 'bg.png' %}"); /* Replace 'background.jpg' with the path to your background image */
             background-size: cover;
             background-position: top;
             font-family: Arial, sans-serif;
